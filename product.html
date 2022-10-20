@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerse | Product-list</title>
+    <!-- CSS LINKS  -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!-- site header  -->
+    <header class="site-header">
+        <div class="site-header_wrapper">
+            <nav class="site-nav container">
+                <ul class="nav-list nav-list_contact">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link_green" href="#">Chat with us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+420 336 775 664">+420 336 775 664</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+                    </li>
+                </ul>
+
+                <div class="site-header-off-canvas">
+                    <button class="open"></button>
+                    <ul class="nav-list nav-list_us">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link_green" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link_green" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link_green" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="site-header__bar container">
+                <a class="site-logo" href="index.html">
+                    <img class="logo" src="images/site-logo.png" alt="Logo">
+                </a>
+
+                <form class="searchbar">
+                    <select>
+                        <option value="categories">All categories</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="fruit">Fruit and vegetables</option>
+                        <option value="meat">Meat and fish</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="kitchen">Kitchen</option>
+                    </select>
+                    <label class="visually-hidden" for="name" aria-label="Search Products"></label>
+                    <input type="search" name="product" placeholder="Search Products, categories ...">
+                    <button class="magazine-button magazine-button_search" type="submit"></button>
+                </form>
+                
+                <div class="product-buttons">
+                    <button class="magazine-button magazine-button_user"></button>
+                    <button class="magazine-button magazine-button_basket"><span>4</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="categories-nav">
+            <div class="container">
+                <ul class="categories-nav-list nav-list">
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Bakery</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Fruit and vegetables</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Meat and fish</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Drinks</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Kitchen</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Special nutrition</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Baby</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="categories-nav-item">
+                        <a class="dropdown" href="#">Pharmacy</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">falonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">palonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">talonchi</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-link" href="#">yolg'onchi</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- site main  -->
+    <main class="site-main">
+        <header class="product-main__header container">
+            <div class="product-main__header-view">
+                <p><span>Homepage / </span>Fruit and vegetables</p>
+                <div class="product-main__header-select">
+                    <h3>Fruit and vegetables</h3>
+                    <ul class="header-select__nav">
+                        <li class="header-select__item">
+                            <button class="header-select__button header-select__button-active header-select__button-list"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.33301 8H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 1.33331V14.6666" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> Grid view</button>
+                        </li>
+                        <li class="header-select__item">
+                            <button class="header-select__button header-select__button-grid"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.33301 4.66663H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.33301 8H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.33301 11.3333H14.6663" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> List view</button>
+                        </li>
+                        <li class="header-select__item">
+                            <button class="header-select__button"><span class="common-style">117</span>Products</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <form class="header-filter__form">
+                <div class="form-radio">
+                    <input type="radio" id="fruit" name="fruit" value="fruit">
+                    <label for="fruit">Filter Text</label>
+                    <input type="radio" id="veg" name="fruit" value="veg">
+                    <label for="veg">Filter Text</label>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="fruitcheck1" name="fruit" value="fruit1">
+                    <label for="fruitcheck1">Filter</label>
+                    <p>Nbm</p>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="fruitcheck2" name="fruit" value="fruit2">
+                    <label for="fruitcheck2">Filter</label>
+                    <p>Nbm</p>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="fruitcheck3" name="fruit" value="fruit2">
+                    <label for="fruitcheck3">Filter</label>
+                    <p>12</p>
+                    <select name="select" id="select">
+                        <option value="select">Select</option>
+                        <option value="select">Select</option>
+                        <option value="select">Select</option>
+                        <option value="select">Select</option>
+                        <option value="select">Select</option>
+                    </select>
+                </div>
+            </form>
+            <p><span>Applied filtres: </span><span class="common-style">Selected Filtre</span><span class="common-style">Selected Filtre</span></p>
+        </header>
+
+        <section class="product-category container">
+            <div class="product-category__aside">
+                <div class="aside-catefories">
+                    <h2 class="site-heading">Categories</h2>
+                    <ul>
+                        <li>
+                            <a href="#">Category name <span class="common-style">320</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Category name <span class="common-style">320</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Category name <span class="common-style">320</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Category name <span class="common-style">320</span></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="aside-brands">
+                    <h2 class="site-heading">Brands</h2>
+                    <form>
+                        <div>
+                            <input type="checkbox" id="brand1" name="brand" value="brand1">
+                            <label for="brand1">Filtre by brand item</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="brand2" name="brand" value="brand2" checked>
+                            <label for="brand2">Filtre by brand item</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="brand3" name="brand" value="brand3" checked>
+                            <label for="brand3">Filtre by brand item</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="brand4" name="brand" value="brand4">
+                            <label for="brand4">Filtre by brand item</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="brand5" name="brand" value="brand5">
+                            <label for="brand5">Filtre by brand item</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="aside-rating">
+                    <h2 class="site-heading">Rating</h2>
+                    <form>
+                        <div>
+                            <input type="checkbox" id="rate1" name="rating" value="rate1">
+                            <label for="rate1"><img src="images/five-star.png" alt="Rate" width="88" height="16"></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rate2" name="rating" value="rate2">
+                            <label for="rate2"><img src="images/four-star.png" alt="Rate" width="88" height="16"></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rate3" name="rating" value="rate3">
+                            <label for="rate3"><img src="images/three-star.png" alt="Rate" width="88" height="16"></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rate4" name="rating" value="rate4">
+                            <label for="rate4"><img src="images/two-star.png" alt="Rate" width="88" height="16"></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="rate5" name="rating" value="rate5">
+                            <label for="rate5"><img src="images/one-star.png" alt="Rate" width="88" height="16"></label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="aside-price">
+                    <h2 class="site-heading">Price</h2>
+                    <form>
+                        <div class="range">
+                            <input class="min-range" type="range" name="range" id="range" min="0" max="9" value="0" step="1">
+                            <input class="max-range" type="range" name="range" id="range" min="10" max="999" value="0" step="1">
+                        </div>
+                        <div class="output">
+                            <div>
+                                <label>Min</label><br>
+                                <output>0</output>
+                            </div>
+                            <div>
+                                <label>Min</label><br>
+                                <output>000</output>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="card-button" type="submit">Apply</button>
+                            <button class="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="product-category__container">
+                <div id="product-list" class="product-category__container-list hidden">
+                    <div class="product-list__card">
+                        <img class="product-list__img" src="images/cards-image.png" alt="Card Image">
+                        <div class="product-list__card-info">
+                            <h4>Product title</h4>
+                            <p>Space for a small product description</p>
+                            <img src="images/black-star.png" alt="Star" width="108" height="20">
+                            <table>
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td><span>New</span> (Extra fresh)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td>Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span>320 pcs</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-list__card-info">
+                            <h4>36.99 USD </h4>
+                            <del>48.56</del>
+                            <b>Free shipping</b>
+                            <p>Delivery in 1 day</p>
+
+                            <button class="card-button">Product detail</button>
+                            <button class="add-wishlist">Add to wish list</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-list__card">
+                        <img class="product-list__img" src="images/cards-image.png" alt="Card Image">
+                        <div class="product-list__card-info">
+                            <h4>Product title</h4>
+                            <p>Space for a small product description</p>
+                            <img src="images/black-star.png" alt="Star" width="108" height="20">
+                            <table>
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td><span>New</span> (Extra fresh)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td>Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span>320 pcs</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-list__card-info">
+                            <h4>36.99 USD </h4>
+                            <del>48.56</del>
+                            <b>Free shipping</b>
+                            <p>Delivery in 1 day</p>
+
+                            <button class="card-button">Product detail</button>
+                            <button class="add-wishlist">Add to wish list</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-list__card">
+                        <img class="product-list__img" src="images/cards-image.png" alt="Card Image">
+                        <div class="product-list__card-info">
+                            <h4>Product title</h4>
+                            <p>Space for a small product description</p>
+                            <img src="images/black-star.png" alt="Star" width="108" height="20">
+                            <table>
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td><span>New</span> (Extra fresh)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td>Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span>320 pcs</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-list__card-info">
+                            <h4>36.99 USD </h4>
+                            <del>48.56</del>
+                            <b>Free shipping</b>
+                            <p>Delivery in 1 day</p>
+
+                            <button class="card-button">Product detail</button>
+                            <button class="add-wishlist">Add to wish list</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-list__card">
+                        <img class="product-list__img" src="images/cards-image.png" alt="Card Image">
+                        <div class="product-list__card-info">
+                            <h4>Product title</h4>
+                            <p>Space for a small product description</p>
+                            <img src="images/black-star.png" alt="Star" width="108" height="20">
+                            <table>
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td><span>New</span> (Extra fresh)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td>Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span>320 pcs</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-list__card-info">
+                            <h4>36.99 USD </h4>
+                            <del>48.56</del>
+                            <b>Free shipping</b>
+                            <p>Delivery in 1 day</p>
+
+                            <button class="card-button">Product detail</button>
+                            <button class="add-wishlist">Add to wish list</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-list__card">
+                        <img class="product-list__img" src="images/cards-image.png" alt="Card Image">
+                        <div class="product-list__card-info">
+                            <h4>Product title</h4>
+                            <p>Space for a small product description</p>
+                            <img src="images/black-star.png" alt="Star" width="108" height="20">
+                            <table>
+                                <tr>
+                                    <td>Fresheness</td>
+                                    <td><span>New</span> (Extra fresh)</td>
+                                </tr>
+                                <tr>
+                                    <td>Farm</td>
+                                    <td>Grocery Tarm Fields</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Europe</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock</td>
+                                    <td><span>320 pcs</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="product-list__card-info">
+                            <h4>36.99 USD </h4>
+                            <del>48.56</del>
+                            <b>Free shipping</b>
+                            <p>Delivery in 1 day</p>
+
+                            <button class="card-button">Product detail</button>
+                            <button class="add-wishlist">Add to wish list</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="product-grid" class="product-category__container-grid">
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                                <del>48.56</del>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-discount">-36%</span>
+                            <img class="card-image" src="images/cards-image.png" alt="Product Image">
+                        </div>
+                        <h2 class="card-heading">Product title</h2>
+                        <p class="card-info">Space for a small product description </p>
+                        <img src="images/black-star.png" alt="Star" width="88" height="16">
+                        <div class="card-buy">
+                            <div class="card-price-box">
+                                <span class="card-cost">1.48 USD</span>
+                            </div>
+                            <button class="card-button">Buy now</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="show-more-products">
+            <div class="container show-more-products__container">
+                <div class="page">
+                    <h5>Page: </h5>
+                    <ol>
+                        <li>1</li>
+                        <li>2</li>
+                        <li class="active-page">3</li>
+                        <li>4</li>
+                    </ol>
+                </div>
+                <button class="card-button show-more__button">Show more products</button>
+                <p><span class="common-style">336</span> Products</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- site footer  -->
+    <footer class="site-footer">
+        <div class="footer-nav container">
+            <ul class="site-nav-list">
+                <li class="site-nav-item">
+                    <h2 class="site-heading">Get in touch</h2>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">About Us</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Careers</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Press Releases</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Blog</a>
+                </li>
+            </ul>
+
+            <ul class="site-nav-list">
+                <li class="site-nav-item">
+                    <h2 class="site-heading">Connections</h2>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Facebook</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Twitter</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Instagram</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Youtube</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">LinkedIn</a>
+                </li>
+            </ul>
+            
+            <ul class="site-nav-list">
+                <li class="site-nav-item">
+                    <h2 class="site-heading">Earnings</h2>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Become an Affiliate</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Advertise your product</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Sell on Market</a>
+                </li>
+            </ul>
+
+            <ul class="site-nav-list">
+                <li class="site-nav-item">
+                    <h2 class="site-heading">Account</h2>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Your account</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Returns Centre</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">100 % purchase protection</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Chat with us</a>
+                </li>
+                <li class="site-nav-item">
+                    <a class="site-nav-link nav-link_green" href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-products container">
+            <h2 class="footer-nav-heading">Product tags</h2>
+            <ul class="product-list">
+                <li class="product-item"><a class="product-link" href="#">Beans</a></li>
+                <li class="product-item"><a class="product-link" href="#">Carrots</a></li>
+                <li class="product-item"><a class="product-link" href="#">Apples</a></li>
+                <li class="product-item"><a class="product-link" href="#">Garlic</a></li>
+                <li class="product-item"><a class="product-link" href="#">Mushrooms</a></li>
+                <li class="product-item"><a class="product-link" href="#">Tomatoes</a></li>
+                <li class="product-item"><a class="product-link" href="#">Chilli peppers</a></li>
+                <li class="product-item"><a class="product-link" href="#">Broccoli</a></li>
+                <li class="product-item"><a class="product-link" href="#">Watermelons</a></li>
+                <li class="product-item"><a class="product-link" href="#">Oranges</a></li>
+                <li class="product-item"><a class="product-link" href="#">Bananas</a></li>
+                <li class="product-item"><a class="product-link" href="#">Grapes</a></li>
+                <li class="product-item"><a class="product-link" href="#">Cherries</a></li>
+                <li class="product-item"><a class="product-link" href="#">Meat</a></li>
+                <li class="product-item"><a class="product-link" href="#">Seo tag</a></li>
+                <li class="product-item"><a class="product-link" href="#">Fish</a></li>
+                <li class="product-item"><a class="product-link" href="#">Seo tag</a></li>
+                <li class="product-item"><a class="product-link" href="#">Fresh food</a></li>
+                <li class="product-item"><a class="product-link" href="#">Lemons</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <p class="copyright">Copyright © 2020 petrbilek.com</p>
+        </div>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
